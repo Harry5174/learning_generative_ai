@@ -27,8 +27,8 @@ To clone and run the project, follow these steps:
    ```bash
    git clone https://github.com/Harry5174/learning_generative_ai.git
    cd learning_generative_ai/01_microservices_all_in_one_platform/00_python_poetry/00_poetry_projects/02_fastapi_todo_poetry_sqlmodel
-   Install Python Poetry if you haven't already:
    ```
+Install Python Poetry if you haven't already...
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
