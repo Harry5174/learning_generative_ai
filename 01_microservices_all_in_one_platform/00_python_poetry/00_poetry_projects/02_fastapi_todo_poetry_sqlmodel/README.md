@@ -30,48 +30,57 @@ To clone and run the project, follow these steps:
    Install Python Poetry if you haven't already:
    ```
 
-bash
-Copy code
+```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-Install project dependencies using Poetry:
+```
 
-bash
-Copy code
+Install project dependencies using Poetry:
+```bash
 poetry install
+```
 Start the FastAPI server:
 
 bash
-Copy code
+Copy code:
+
+```bash
 poetry run uvicorn todo.main:app --reload
+```
+
 Run the Streamlit app:
 
-bash
-Copy code
+```bash
 streamlit run todo.streamlit.streamlit_client.py
-API Reference
+```
+
+# API Reference
 The backend exposes the following API endpoints:
 
-GET /todos: Retrieves all todo items.
-GET /todos/{id}: Retrieves a specific todo item by its ID.
-POST /todos/: Creates a new todo item.
-PUT /todos/{id}: Updates an existing todo item.
-DELETE /todos/{id}: Deletes a todo item by its ID.
-Database
+- **GET /todos:** Retrieves all todo items.
+- **GET /todos/{id}:** Retrieves a specific todo item by its ID.
+- **POST /todos/:** Creates a new todo item.
+- **PUT /todos/{id}:** Updates an existing todo item.
+- **DELETE /todos/{id}:** Deletes a todo item by its ID.
+
+# Database
 The database module contains modules for database connectivity and schema definition using SQLModel:
 
-database_connectivity.py: Establishes database connectivity.
-database_tables.py: Defines database tables and creates them if they do not exist.
-schema.py: Defines the schema for todo items using SQLModel.
-Contributing
+- **database_connectivity.py:** Establishes database connectivity.
+- **database_tables.py:** Defines database tables and creates them if they do not exist.
+- **schema.py:** Defines the schema for todo items using SQLModel.
+
+# Contributing
 Contributions are welcome! Follow these steps to contribute to the project:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/improvement).
-Make your changes and commit them (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/improvement).
-Create a new Pull Request.
-License
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/improvement`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/improvement`).
+5. Create a new Pull Request.
+
+# License
 This project is licensed under the MIT License.
 
-Contact Information
-For questions or suggestions, please contact harisjaved010@gmail.com.
+# Contact Information
+For questions or suggestions, please contact [harisjaved010@gmail.com](mailto:harisjaved010@gmail.com).
+
