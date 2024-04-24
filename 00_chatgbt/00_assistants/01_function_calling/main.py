@@ -30,7 +30,7 @@ else:
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')  # Use getenv to avoid KeyError if variable is not set
-database_url: Optional[str | URL] = os.getenv("DATABASE_URL") # insert your database url here
+database_url: Optional[str | URL] = os.getenv("database_url") # insert your database url here
 
 # Database model for logging queries and responses
 class QueryLog(SQLModel, table=True):
