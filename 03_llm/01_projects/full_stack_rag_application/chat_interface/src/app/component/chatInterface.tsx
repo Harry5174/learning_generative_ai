@@ -66,13 +66,13 @@ const Chatbot = () => {
             <div className="flex items-center justify-between relative ">
               <div className="relative z-10 mt-2 flex items-center">
                 <Image
-                  src="/duetIcon.jpeg" // Replace with your actual logo path
+                  src="/Icon.jpeg" // Replace with your actual logo path
                   width={50}
                   height={50}
-                  alt="DUET Logo"
+                  alt="Logo"
                   className="mr-2 rounded-full"
                 />
-                <h2 className="text-lg font-semibold">DUET HelperBot</h2>
+                <h2 className="text-lg font-semibold">HelperBot</h2>
               </div>
             </div>
             <svg
