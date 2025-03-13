@@ -1,5 +1,5 @@
 import uvicorn
-from route import app
+from uv_func_calling.utils.route import app
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
